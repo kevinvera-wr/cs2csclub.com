@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Condensed" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+        integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="Images/logo.png">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <title>CS2CS |Computer Science</title>
+
+</head>
+<body>
+    <div class="body-container">
+        <div class="cell cell-1A">
+            
+            <!-- NAV BAR -->
+            <div class="menu-container">
+                <nav class="menu-bar menu-bar-A">
+                    <ul id="menu">
+                        <li class="menu-bar-item" onclick="window.location.href='index.html';" >Home</li>
+                        <li class="menu-bar-item" onclick="window.location.href='compSci.html';" >Computer Science</li>
+                        <li class="menu-bar-item" onclick="window.location.href='cyberSec.html';" >Cybersecurity</li>
+                        <li id="bar-item" class="menu-bar-item" onclick="window.location.href='contact.html';" >Contact us</li>
+                        <li id="bars" class="mobile bars"><i class="fa fa-bars"></i></li>
+                        <li id="cross" class="mobile cross"><i class="fa fa-close"></i></li>
+                    </ul>
+                </nav>
+            </div> <!-- menu-container -->
+            <script type="text/javascript" src="index.js"></script>
+
+            <!-- POP UP MENU -->
+            <div class="container">
+                <div class="menu-toggle">
+                    <span class="club_logo logoA"></span>
+                </div> <!-- menu-toggle -->
+            
+                <div class="menu-round">
+                    <<div class="btn-app btn-A" onclick="window.open('https://www.instagram.com/cs2cs_uc_edu/')">
+                        <div class="fa fa-instagram"></div>
+                    </div> <!-- btn-app -->
+                    <div class="btn-app btn-A" onclick="window.open('https://discord.gg/rBdmyCANqw')">
+                        <div class="fa fa-discord"></div>
+                    </div> <!-- btn-app -->
+                    <div class="btn-app btn-A" onclick="window.location.href='index.html';" >
+                        <div class="fa fa- fa-home"></div>
+                    </div> <!-- btn-app -->
+                </div> <!-- menu-round -->
+            
+        
+            </div> <!-- container -->
+
+            <!-- GLASS CARDS -->
+            <div class="element-holder">
+                <div class="info-container">
+
+                    <div class="box">
+                        <span></span>
+                        <div class="content">
+                            <h2>Tutoring</h2>
+                            <p>
+                                Don't forget to look for tutoring sessions at the ALC (Academic Learning Center).
+                                You can opt for either online or
+                                in-person tutoring. For in-person tutoring, no prior appointment is required.
+                            </p>
+                            <a class="card-btn" onclick="window.open('https://eoftutortrac.ucc.edu/tracweb40/main.4sp')">Go Online</a>
+                        </div> <!-- content -->
+                    </div> <!-- box -->
+
+                    <div class="box">
+                        <span></span>
+                        <div class="content">
+                            <h2>Labs</h2>
+                            <p>
+                                Our courses are designed for all levels,
+                                from beginners to experts.
+                                Start learning today and take your career to the next level.
+                            </p>
+                            <a class="card-btn" onclick="window.open('https://replit.com/@CS2CSUnion')">Read More</a>
+                        </div> <!-- content -->
+                    </div> <!-- box -->
+
+                    <div class="box">
+                        <span></span>
+                        <div class="content">
+                            <h2>Useful Links</h2>
+                            <a class="card-btn" onclick="window.open('https://www.w3schools.com/python/default.asp')">Progriming fundamentals with Python</a>
+                            <a class="card-btn" onclick="window.open('https://www.w3schools.com/where_to_start.asp')">Intro to Web Development</a>
+                            <a class="card-btn" onclick="window.open('https://reactnative.dev/')">Intro to App Development with React Native</a>
+                        </div> <!-- content -->
+                    </div> <!-- box -->
+
+                </div> <!-- info-container -->
+            </div> <!-- element-holder -->
+
+
+            <div class="footer-basic footerA">
+                <footer>
+                    <p class="copyright" style="font-size: medium;">Computer Science to Cybersecurity © 2023</p>
+                </footer>
+            </div> <!-- footerA -->
+
+        </div> <!-- cell-1A -->
+
+    </div>  <!-- body-container -->
+    <script>
+
+        // Opens the pop-up menu
+        $(".menu-toggle").click(function () {
+            $(".menu-toggle").toggleClass('open');
+            $(".menu-round").toggleClass('open');
+            $(".menu-line").toggleClass('open');
+        });
+
+        AOS.init();
+    </script>
+</body>
+</html>
